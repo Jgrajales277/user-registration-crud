@@ -6,24 +6,24 @@ import {HttpClientModule} from '@angular/common/http'
 //rutas
 
 import { AppComponent } from './app.component';
-import { IngresoComponent } from './security/ingreso/ingreso.component';
-import { RegistroComponent } from './security/registro/registro.component';
+import { SigninComponent } from './security/signin/signin.component';
+import { RegisterComponent } from './security/register/register.component';
 import { ApproutingModule } from './app-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
-import { ProductsComponent } from './pages/products/products.component';
+import { MembersComponent } from './pages/members/members.component';
 
   
 @NgModule({
   declarations: [
     AppComponent,
-    IngresoComponent,
-    RegistroComponent,
+    SigninComponent,
+    RegisterComponent,
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ProductsComponent,
+    MembersComponent,
   ],
   imports: [
     BrowserModule,

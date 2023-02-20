@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { IngresoComponent } from './security/ingreso/ingreso.component';
-import { RegistroComponent } from './security/registro/registro.component';
-import { ProductsComponent } from './pages/products/products.component';
+import { SigninComponent } from './security/signin/signin.component';
+import { RegisterComponent } from './security/register/register.component';
+import { MembersComponent } from './pages/members/members.component';
 
 const app_routes: Routes = [
   { path: 'home', component:HomeComponent },
-  { path: 'ingreso', component: IngresoComponent },
-  { path: 'registro', component: RegistroComponent },
-  { path: 'productos', component: ProductsComponent},
+  { path: 'signin', component: SigninComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'members', component: MembersComponent},
   { path: '**', redirectTo: 'home', pathMatch: 'full' },
 ];
 
