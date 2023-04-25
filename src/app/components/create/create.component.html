@@ -1,0 +1,33 @@
+<h2>Componente CREATE</h2>
+
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()" novalidate>
+
+    <div class=""mb-3>
+        <label class="form-label">Name</label>
+        <input formControlName=" title" type="text" class=" form-control" required>
+
+
+    </div>
+    <div class=""mb-3>
+        <label class="form-label">Email</label>
+        <input formControlName=" title" type="text" class=" form-control" required>
+
+
+    </div>
+    <div class=""mb-3>
+        <label class="form-label">Address</label>
+        <input formControlName=" title" type="text" class=" form-control" required>
+
+
+    </div>
+    <div class=""mb-3>
+        <label class="form-label">Phone</label>
+        <input formControlName=" title" type="text" class=" form-control" required>
+
+
+    </div>
+    <button [disabled]="!postForm.valid" type="submit" class="btn btn-primary">Store</button>
+
+
+</form>
+
