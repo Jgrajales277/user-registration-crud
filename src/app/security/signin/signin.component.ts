@@ -11,7 +11,7 @@ import { User } from '../../core/interfaces/user';
   styleUrls: ['./signin.component.css'],
 })
 export class SigninComponent {
-  user: User = {email:"", password:""};
+  user: User = {email:"", password:"" };
   constructor(private auth: AuthService, private router: Router) {}
 
   signIn(form: NgForm) {

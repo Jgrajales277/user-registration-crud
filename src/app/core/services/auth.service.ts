@@ -30,14 +30,13 @@ export class AuthService {
   }
 
   signUp(user: User) {
-    const { email, password } = user;
+
+    const {email, password, fullName} = user;
     return this.afAuth
-      .createUserWithEmailAndPassword(email, password)
-      .then((resp) => {
+      .createUserWithEmailAndPassword(email, password).then((resp) => {
         console.log(resp);
-      })
-      .catch((error) => {
+      }).catch((error) => {
         console.error(error);
-      });
+      })
   }
 }
