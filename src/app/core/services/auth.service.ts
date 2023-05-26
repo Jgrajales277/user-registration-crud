@@ -20,12 +20,10 @@ export class AuthService {
       .signInWithEmailAndPassword(email, password)
       .then((resp) => {
         console.log(resp);
+        this.router.navigate(['/Members']);
       })
       .catch((error) => {
         console.error(error);
-        // this.router.navigateByUrl('/members');
-        this.router.navigate(['/Members']);
-
       });
   }
 
@@ -35,6 +33,7 @@ export class AuthService {
     return this.afAuth
       .createUserWithEmailAndPassword(email, password).then((resp) => {
         console.log(resp);
+        this.router.navigate(['/Members']);
       }).catch((error) => {
         console.error(error);
       })
